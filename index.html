@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolution and Natural Selection Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Evolution and Natural Selection</h1>
+    <p>Explore concepts like variation, natural selection, speciation, and genetic engineering!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><button onclick="showCategory('variation')">Variation</button></li>
+      <li><button onclick="showCategory('selection')">Natural Selection</button></li>
+      <li><button onclick="showCategory('factors')">Abiotic & Biotic Factors</button></li>
+      <li><button onclick="showCategory('speciation')">Speciation</button></li>
+      <li><button onclick="showCategory('evidence')">Evidence of Evolution</button></li>
+      <li><button onclick="showCategory('genetics')">Genetic Engineering</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="flashcard-container">
+      <div id="flashcard">
+        <p id="flashcard-question"></p>
+        <button onclick="flipFlashcard()">Show Answer</button>
+        <p id="flashcard-answer" style="display:none;"></p>
+      </div>
+      <button onclick="nextFlashcard()">Next Flashcard</button>
+    </div>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
